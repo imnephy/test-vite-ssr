@@ -1,21 +1,32 @@
-import { Meta } from '@shared/meta'
-import { Image } from '@shared/ui/image'
+// import { Todos } from '@entities/todos'
+// import { Meta } from '@shared/meta'
+// // const delay = (ms: number) => {
+// //   return new Promise((res) => {
+// //     setTimeout(() => res(true), ms)
+// //   })
+// // }
 
-export const HomePage = () => {
+import { Todos } from '@entities/todos'
+
+// export const HomePage = () => {
+//   return (
+//     <>
+//       <Meta description="Unistory" title="Unistory" />
+//       <div className="flex justify-center gap-10">
+//       </div>
+//     </>
+//   )
+// }
+export function Page() {
   return (
     <>
-      <Meta description="Unistory" title="Unistory" />
-      <h1>🦄⚡ Unistory vite template</h1>
-      <h2>{process.env.VITE_APP_URL || null}</h2>
-      <Image
-        alt=""
-        style={{
-          width: '40rem',
-        }}
-        responsive
-        src="/assets/random/random.jpg"
-        loading="lazy"
-      />
+      <h1>Welcome</h1>
+      This page is:
+      <Todos />
+      <ul>
+        <li>Rendered to HTML.</li>
+        <li>Interactive. 123</li>
+      </ul>
     </>
   )
 }

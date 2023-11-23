@@ -4,12 +4,15 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import svgr from 'vite-plugin-svgr'
-
+import vike from 'vite-plugin-ssr/plugin'
 import manifest from './manifest.json';
+import vercel from 'vite-plugin-vercel';
 
 export default defineConfig({
   plugins: [
+    vercel(),
     react(),
+    vike(),
     svgr({
       exportAsDefault: true
     }),

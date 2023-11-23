@@ -1,12 +1,5 @@
-import { Meta } from '@shared/meta'
+import React from 'react'
 
-export const NotFoundPage = () => {
-  return (
-    <>
-      <Meta description="404" title="Not found" />
-      <h1>Not found</h1>
-    </>
-  )
+export const PageComponent = () => {
+  return <div>Page</div>
 }
-
-export default NotFoundPage

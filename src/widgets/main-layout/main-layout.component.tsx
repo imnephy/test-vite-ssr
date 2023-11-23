@@ -9,7 +9,7 @@ export interface IMainPageLayoutProperties extends React.ComponentProps<'main'> 
 export const MainLayout = () => {
   return (
     <>
-      <Header />
+      <Header className="h-10 bg-[green]" />
       <Main>
         <Outlet />
       </Main>
